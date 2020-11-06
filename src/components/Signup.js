@@ -5,6 +5,7 @@ import {Link, useHistory} from "react-router-dom"
 import{Container} from 'react-bootstrap'
 
 export default function Signup() {
+    const nameRef = useRef()
     const emailRef = useRef()
     const passwordRef = useRef()
     const passwordConfirmRef = useRef()
@@ -39,6 +40,10 @@ export default function Signup() {
                 <h2 className='text-center mb-4'>Sign Up</h2>
                 {error && <Alert variant='danger'>{error}</Alert>}
                 <Form onSubmit={handleSubmit}>
+                    <Form.Group id='user name'>
+                        <Form.Label>User Name</Form.Label>
+                         <Form.Control type='email'  ref={nameRef} required />
+                    </Form.Group>
                     <Form.Group id='email'>
                         <Form.Label>Email</Form.Label>
                          <Form.Control type='email'  ref={emailRef} required />

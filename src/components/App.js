@@ -11,6 +11,9 @@ import Home from './Home'
 import Admin from './Admin'
 import Setting from './Setting'
 import * as ROUTES from './constants/routes'
+import CreateUsers from './CreateUsers'
+import UpdateUsers from './UpdateUsers'
+import ShowUsers from './ShowUsers'
 import NotFound from './NotFound'
 
 
@@ -30,6 +33,9 @@ function App() {
                   <Route path={ROUTES.LOGIN} component={Login} />
                   <Route path='/forgot-password' component={ForgotPassword} />
                   <Route path={ROUTES.PROFILE} component={Profile} />
+                  <Route path='/create' component={CreateUsers} />
+                  <Route path='/update/:id' component={UpdateUsers} />
+                  <Route path='/show/:id' component={ShowUsers} />
                   <Route  component={NotFound} />
                   </Switch>
               </AuthProvider>
