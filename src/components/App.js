@@ -11,9 +11,9 @@ import Home from './Home'
 import Admin from './Admin'
 import Setting from './Setting'
 import * as ROUTES from './constants/routes'
-import CreateUsers from './CreateUsers'
-import UpdateUsers from './UpdateUsers'
-import ShowUsers from './ShowUsers'
+import CreateUsers from './Users/CreateUsers'
+import UpdateUsers from './Users/UpdateUsers'
+import ShowUsers from './Users/ShowUsers'
 import NotFound from './NotFound'
 
 
